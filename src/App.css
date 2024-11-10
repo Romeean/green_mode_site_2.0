@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main_page {
+  width: 100%; /* Избегаем 100vw */
+  max-width: 3840px;
+  min-height: 100vh;
+  background-color: #151414;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden; /* Прячем горизонтальную прокрутку */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 1920px; 
+  margin: 0 auto;
+
+  margin: 0px;
+}
+
+.container > * {
+  min-height: 100vh; /* Высота каждого элемента как минимум равна высоте экрана */
+}
+@media(min-width:1920px){
+  .container{
+    max-width: 100vw;
+  }
+}

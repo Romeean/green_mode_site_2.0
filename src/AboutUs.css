@@ -1,0 +1,167 @@
+:root {
+    --font-family: Raleway, sans-serif;
+    --background-color: #151414;
+    --color: #fff;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+  
+  /* the main styles */
+  .about_us_section{
+    max-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: clamp(20px, 5vw, 480px);
+    padding: 20px 20px 0px 10.42vw;
+    max-height: 100vh;
+  }
+  
+  .title_of_about_us {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 55px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.50s ease;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  
+  }
+  .subtitle_of_about_us {
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 35px;
+    color: #fff;
+    transition: all 0.50s ease;
+    margin-top: 40px;
+    
+  
+  }
+  .bold_subtitle_of_about_us {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 35px;
+    color: #fff;
+    transition: all 0.50s ease;
+  
+  }
+  
+  /* our photos */
+  .background_useless_image_of_about_us{
+    position: absolute;
+    color: white;
+  }
+  .worker_image_of_about_us{
+    width:600px;
+    height: 625px;
+    border-radius: 20px;
+    transition: all 0.50s ease;
+    margin-top: 100px;
+  
+  }
+  @media(max-width: 1400px){
+    .worker_image_of_about_us{
+      margin-top: 180px;
+      width: 500px;
+      height: 525px;
+    }
+  }
+  @media(max-width: 1160px){
+    .about_us_section{
+      grid-template-columns: repeat(1, 1fr); 
+      gap:10px;
+      margin-left: 10vw;
+    }
+    .subtitle_of_about_us{
+      margin-top: 20px;
+      font-size: 3.01vw;
+
+    }
+    .bold_subtitle_of_about_us{
+      font-size: 3.01vw;
+    }
+    .title_of_about_us{
+      margin-bottom: 50px;
+      margin-top: 100px;
+      font-size: 4.7vw;
+    }
+    .worker_image_of_about_us{
+      border-radius: 70px;
+      margin-top: 0px;
+      width: 75vw;
+      height: 300px;
+      margin: auto;
+  
+    }
+    .about_us_section{
+      padding: 20px 20px 20px 0px;
+    }
+  }
+  @media(max-width: 700px){
+    .subtitle_of_about_us{
+      font-size: 21.07px;
+
+    }
+    .bold_subtitle_of_about_us{
+      font-size: 21.07px;
+    }
+    .title_of_about_us{
+      font-size: 32.9px;
+    }
+  }
+  @media (min-width: 1921px) {
+    .about_us_section {
+      display: grid; /* Оставляем Grid для работы с двумя колонками */
+      grid-template-columns: repeat(2, 1fr); /* Две равные колонки */
+      gap: 7vw; /* Увеличиваем промежуток между колонками */
+      max-width: 1920px; /* Ограничиваем максимальную ширину */
+      width: 100%; /* Устанавливаем ширину 100%, чтобы занимать всю ширину экрана */
+      margin: 0 auto; /* Центрирование секции по горизонтали */
+      padding: 50px 0; /* Отступы сверху и снизу */
+    }
+    
+    .title_of_about_us {
+      font-size: 70px; /* Увеличиваем размер заголовка */
+      margin-bottom: 120px; /* Увеличиваем отступы */
+      margin-top: 120px;
+    }
+
+    .subtitle_of_about_us {
+      font-size: 45px; /* Увеличиваем размер подзаголовков */
+      margin-top: 60px;
+    }
+
+    .bold_subtitle_of_about_us {
+      font-size: 45px; /* Увеличиваем размер текста с выделением */
+    }
+
+    .worker_image_of_about_us {
+      width: 700px; /* Увеличиваем размеры изображений сотрудников */
+      height: 750px;
+      margin-top: 120px; /* Увеличиваем отступы */
+      border-radius: 25px; /* Немного увеличиваем радиус скругления */
+    }
+}
+@media(max-width: 400px){
+  .about_us_section{
+    gap: 10px;
+  }
+  .worker_image_of_about_us{
+    height: 200px;
+    border-radius: 20px;
+
+  }
+}
+@media(max-width: 300px){
+  .worker_image_of_about_us{
+    display: none;
+  }
+}
+@media(max-width: 220px){
+  .title_of_about_us{
+    font-size:30px;
+  }
+}

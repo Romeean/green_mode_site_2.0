@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+  /* Основной текстовый блок */
+.text_block {
+  display: inline-block;
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.services {
+  display: flex;
+  flex-direction: column; /* Если требуется вертикальная компоновка */
+  justify-content: center; /* Центрируем по горизонтали */
+  align-items: center; /* Центрируем текст блок по высоте */
+  width: 100vw;
+  max-width: 1920px;
+  margin-top: 20px; /* Небольшой отступ сверху */
+}
+
+  /* text settings */
+.title_services {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 55px;
+  text-align: center;
+  transition: all 0.5s ease;
+  color: #fff;
+  width: 90vw;
+  margin-right: 20px;
+}
+.green_title_services {
+  color: #45fb78;
+}
+
+  /* Блок приоритетов */
+.container_of_priorities {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+  justify-items: center;
+}
+  
+.background_of_priorities {
+  border: 1px solid #1e1e1e;
+  border-radius: 20px;
+  width: 405px;
+  height: 499px;
+  background: #151515;
+  box-sizing: border-box;
+}
+  
+.icon_image {
+  margin-top: 40px;
+  margin-left: 34px;
+}
+.text_title_of_priorities{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px; /* Адаптивный размер шрифта */
+  text-align: left;
+  margin-left: 34px;
+  margin-top:25px;
+  transition: all 0.5s ease;
+  color: #fff;
+}
+.text_subtitle_of_priorities{
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 119%;
+  color: #fff;
+  padding-left: 34px; 
+  padding-top: 23px;
+}
+.text_block{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-top: 400px;
+}
+  
+  /* Our media request */
+@media (max-width: 1920px) {
+  .title_services {
+    font-size: 55px;
+}}
+  
+@media (max-width: 1820px) {
+  .title_services {
+    font-size: 54px;
+}}
+  
+@media (max-width: 1720px) {
+  .title_services {
+    font-size: 53px;
+}}
+  
+@media (max-width: 1620px) {
+  .title_services {
+    font-size: 52px;
+}}
+@media(max-width:1500px){
+  .container_of_priorities{
+    grid-template-columns: repeat(2, 1fr);
+}}
+@media (max-width: 1520px) {
+  .title_services {
+    font-size: 51px;
+}}
+  
+@media (max-width: 1420px) {
+  .title_services {
+    font-size: 50px;
+}}
+  
+@media (max-width: 1320px) {
+  .title_services {
+    font-size: 49px;
+}}
+  
+@media (max-width: 1220px) {
+  .title_services {
+    font-size: 48px;
+}}
+  
+@media (max-width: 1160px) {
+  .title_services {
+    font-size: 4.7vw;
+    margin: 0px;
+    
+}
+  .green_title_services{
+    font-size: 4.7vw;
+    margin: 0px;
+}}
+ 
+@media (max-width: 1020px) {
+  .services{
+    margin-top: 100px;
+}}
+
+@media(max-width:1000px){
+  .container_of_priorities{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-right: 5px;  
+}}
+
+@media (max-width: 960px) {
+  .services{
+    margin-top: 100px;
+}}
+
+@media (max-width: 900px) {
+  .services{
+    margin-top: 100px;
+}}
+ 
+@media (max-width: 700px) {
+  .services{
+    margin-top: 100px;
+  }
+  .title_services{
+    font-size: 32.9px ;
+  }
+  .green_title_services{
+    font-size: 32.9px;
+  }
+}
+  
+@media (max-width: 620px) {
+  .text_block{
+    padding-top: 400px;
+}}
+  
+@media (max-width: 520px) {
+  .text_block{
+    padding-top: 500px;
+}}
+
+@media (max-width: 500px) {
+  .services{
+    margin-top: 100px;
+}}
+
+@media (max-width: 400px) {
+  .services{
+    margin-top: 80px;
+}}
+
+@media (max-width: 350px) {
+  .services{
+    margin-top: 60px;
+}}
+      
+@media (max-width: 420px) {
+  .text_block{
+    padding-top: 600px;
+}
+  .background_of_priorities{
+    width: 305px;
+    height: 399px;
+}
+  .text_subtitle_of_priorities{
+    font-size: 26px;
+    padding-left: 24px; 
+    padding-top: 13px;
+}
+  .text_title_of_priorities{
+    font-size: 30px;
+    margin-left: 24px;
+    margin-top:15px;
+}
+  .icon_image{
+    margin-top: 30px;
+    margin-left: 24px;
+}}
+
+@media(max-width: 380px){
+  .text_block{
+    padding-top:800px;
+}}
+
+@media(max-width: 340px){
+  .background_of_priorities{
+    width: 270px;
+    height: 470px;
+}
+}
+@media (min-width: 1921px) {
+  /* Расширяем контейнер */
+  .services {
+    max-width: 2560px; /* Подстраиваем под большие экраны */
+    margin: 0 auto;
+  }
+  
+  /* Увеличиваем размер шрифта и отступы для заголовков */
+  .title_services {
+    font-size: 65px;
+    width: 80vw; /* Используем меньше ширины для центрирования */
+  }
+  
+  .green_title_services {
+    font-size: 65px;
+  }
+
+  /* Расширяем блок приоритетов и увеличиваем отступы для улучшенного визуального восприятия */
+  .container_of_priorities {
+    gap: 120px;
+  }
+
+  /* Увеличиваем блоки приоритетов */
+  .background_of_priorities {
+    width: 500px;
+    height: 600px;
+  }
+
+  .text_title_of_priorities {
+    font-size: 36px;
+    margin-top: 30px;
+  }
+  
+  .text_subtitle_of_priorities {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+
+  .icon_image {
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,304 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --colorforlogo: #7ed321;
+  --font-family: "Raleway", sans-serif;
+  --second-family: "Roboto", sans-serif;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #a9a9a9; /* Цвет текста */
+  font-size: 16px; /* Одинаковый размер шрифта для обоих */
+  opacity: 1; /* Полностью непрозрачный текст placeholder */
+  font-family: var(--font-family); /* Задаем одинаковый шрифт */
+  font-weight: 400; /* Выравниваем толщину шрифта */
+}
+
+
+
+.ContactUs {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 колонки для текста и формы */
+  gap: clamp(20px, 5vw, 480px); /* расстояние между колонками */
+  margin-top: 200px;
+  margin-left: 170px;
+
+}
+
+.text_block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title_main {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 55px;
+  font-size: clamp(30px, 5vw, 55px); /* Минимум 30px, адаптация до 55px */
+  color: #fff;
+  transition: all 0.5ms ease;
+}
+
+.description_text,
+.description_gmail,
+.description_phone_number{
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 35px;
+  font-size: clamp(20px, 4vw, 35px); /* Минимум 20px, адаптация до 35px */
+  line-height: 125%;
+  color: #fff;
+  transition: all 0.5ms ease;
+}
+.description_text{
+  margin-top:40px;  
+}
+.description_gmail{
+  margin-top: 60px;
+}
+.description_phone_number{
+  margin-top: 25px;
+  font-family: var(--second-family);
+  font: 100;
+  transition: all 0.5ms ease;
+}
+
+.background_of_form {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 700px;
+  border-radius: 70px;
+  background-color: #45FB78;
+}
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 45vw;
+  padding: 15px 30px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+  font-size: 16px;
+}
+
+.form_title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 50px;
+  color: #fff;
+  margin-top:40px;
+  margin-left:20px;
+  margin-bottom: 20px;
+}
+
+.form_grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Форму можно оставить в одну колонку */
+  gap: 15px;
+}
+
+.name_input,
+.phonenumber_input,
+.problem_input {
+  width: 100%;
+  height: 40px; /* Увеличиваем высоту инпутов для удобства ввода */
+  border-radius: 20px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  resize: none;
+  overflow: hidden;
+  outline: none;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+.problem_input{
+  width: 100%;
+  height: 200px;
+  padding-top: 10px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  resize: none;
+  border-color: none;
+}
+.button_form {
+  padding: 15px;
+  background-color: #68c67c; /* Светло-зеленый фон кнопки */
+  color: #333; /* Темно-серый цвет текста для лучшего контраста */
+  border: none;
+  border-radius: 30px; /* Скругленные края для более мягкого вида */
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+button, /* применится к кнопкам */
+input[type="button"], /* кнопки ввода */
+input[type="submit"], /* кнопки отправки формы */
+a { /* и к ссылкам */
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* убирает выделение */
+  -webkit-tap-highlight-color: transparent; /* делает фон прозрачным */
+}
+
+.button_form:hover {
+  background-color: #4da864; /* Более насыщенный зеленый при наведении */
+  color: #fff; /* Белый текст при наведении для улучшения читаемости */
+}
+
+.button_form:hover {
+  background-color: #5ca718;
+}
+.number_of_telephone{
+  font-family: var(--second-family);
+
+}
+@media(max-width: 1500px){
+  .ContactUs{
+    margin-left: 0px;
+  }
+}
+@media(max-width: 1330px){
+  .background_of_form{
+    width: 500px;
+    height: 600px;
+  }
+}
+@media(max-width: 1160px){
+  .text_block_contact_us{
+    margin-left: 10vw;
+  }
+  .background_of_form{
+    width: 50vw;
+    height: 75vh;
+    margin-left:25vw;
+    margin-right:25vw;
+    margin-bottom: 200px;
+    gap:0px;
+  }
+  .form_title{
+  }
+  .ContactUs{
+  grid-template-columns: repeat(1, 1fr); 
+ }
+ .title_main{
+  width: 85vw;
+ }
+ .description_text{
+  width: 85vw;
+ }
+ .description_gmail{
+  width: 85vw;
+ }
+ .description_phone_number{
+  width: 85vw;
+ }
+.text_block_contact_us{
+}
+.form_title{
+  font-size: 5vw;
+}
+textarea::placeholder {
+  
+  font-size: 2vw
+}
+input::placeholder {
+  
+  font-size: 1.8vw
+}
+}
+@media(max-width: 600px){
+  .background_of_form{
+  width: 320px;
+  height: 680px;
+  margin-left: auto; /* Автоматически центрирует по горизонтали */
+  margin-right: auto; 
+}
+
+}
+@media(max-width: 500px){
+  textarea::placeholder {
+    font-size: 11px
+  }
+  input::placeholder {
+    font-size: 10px;
+  }
+  .form_title{
+    font-size: 25px;
+  }
+}
+@media(max-width: 350px){
+  .background_of_form{
+    margin-left: 0px;
+  }
+}
+@media(max-width: 320px){
+  .background_of_form{
+    margin-left: 0px;
+  }
+  .background_of_form{
+
+  }
+}
+@media (min-width: 1921px) {
+  .ContactUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Сохраняем две колонки */
+    gap: 7vw; /* Увеличиваем промежуток между колонками */
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px; /* Ограничиваем ширину секции, чтобы не растягивать ее */
+  }
+
+  .text_block {
+    padding: 40px; /* Увеличиваем отступы для текстового блока */
+  }
+
+  .title_main {
+    font-size: 70px; /* Увеличиваем размер заголовка */
+  }
+
+  .description_text,
+  .description_gmail,
+  .description_phone_number {
+    font-size: 45px; /* Увеличиваем шрифты для текстов */
+    line-height: 150%; /* Увеличиваем межстрочное расстояние для улучшения читаемости */
+  }
+
+  .background_of_form {
+    width: 800px; /* Увеличиваем ширину формы */
+    height: 900px; /* Увеличиваем высоту формы */
+    padding: 40px; /* Увеличиваем внутренние отступы формы */
+    border-radius: 50px; /* Скругление формы остается, но слегка уменьшаем */
+  }
+
+  .form_title {
+    font-size: 60px; /* Увеличиваем заголовок формы */
+    margin-bottom: 30px; /* Добавляем больший отступ снизу */
+  }
+
+  .name_input,
+  .phonenumber_input {
+    height: 50px; /* Увеличиваем высоту полей ввода */
+    font-size: 22px; /* Увеличиваем размер шрифта в полях ввода */
+  }
+
+  .problem_input {
+    height: 300px; /* Увеличиваем высоту текстовой области */
+    font-size: 22px; /* Увеличиваем размер шрифта в текстовой области */
+  }
+
+  .button_form {
+    font-size: 24px; /* Увеличиваем размер шрифта на кнопке */
+    padding: 20px; /* Увеличиваем отступы кнопки */
+  }
+}

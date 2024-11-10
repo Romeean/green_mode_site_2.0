@@ -1,0 +1,394 @@
+html{
+  scroll-behavior: smooth;
+
+}
+:root {
+    --font-family: "Raleway", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --background-color: #151414; 
+    --colorforlogo: #7ed321;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    
+  }
+  
+  .logo img {
+    width: 65px;
+    height: 68px; 
+    transition: all 0.5s ease;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    outline: none; /* Убирает обводку */
+    box-shadow: none; /* Убирает свечение */
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
+  a:focus, a:active {
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .header_main_page{
+    width: 100vw;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row; 
+  }
+  
+  
+  .logo_text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  
+  }
+  
+  .logo_title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 0.50s ease;
+  
+  }
+  
+  .logo_subtitle {
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 32px;
+    color: #fff;
+    opacity: 0.6;
+    transition: all 0.50s ease;
+  
+  }
+  
+  
+  .text_nav:hover {
+    color: #45FB78;
+  }
+  .text_nav_unique:hover {
+    color: #45FB78;
+  }
+  
+  .navigation {
+    display: flex;
+    flex-direction: row; 
+  }
+  .logo_button{
+    width: 15vw;
+  }
+  .header {
+    width: 90vw;
+    max-width: 1920px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.001);
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    opacity: 0.99;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:40px;
+  }
+  
+  nav ul {
+    display: flex; 
+  }
+  .nav_burger{
+  
+    display: flex;
+    font-size: 24px;
+    position: fixed; /* Зафиксируем положение */
+    left: 850px; /* Сместим кнопки к левому краю */
+    top: 52px; /* Отступ сверху */
+    z-index: 1000; /* Чтобы кнопка всегда была выше остальных элементов */
+    transition: all 0.50s ease;
+  
+  
+  }
+  .menu_control{
+    display: flex;
+    margin-right: 90px;
+    z-index: 1001;
+  }
+    .ri-menu-line{
+      display: flex;
+      display: none;
+      transition: 0.5ms ease;
+    }
+    .ri-close-line{
+      display: flex;
+      transition: 0.5ms ease;
+      
+    }
+  
+  .text_column {
+    width: 200px; 
+    padding-top: 16px;
+    padding-left: 20px;
+    background-color: #f8f9fa; 
+    position: fixed;  
+    top: 50px;
+    right: 55px;  
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);  
+    z-index: 1000;
+    border-radius: 7px;
+  }
+  .text_burger_nav{
+    display: block; 
+    text-decoration: none; 
+    font-size: 18px;
+    color: #333;  
+    transition: color 0.3s ease;  
+  }
+  .text_column ul {
+    list-style-type: none;  
+    padding: 0;
+    display: flex;  
+    flex-direction: column; 
+    align-items: flex-start;  
+  }
+  
+  .text_column ul li {
+    margin: 15px 0;  
+  }
+  
+  .text_column ul li a {
+    text-decoration: none;
+    font-size: 18px;  
+    color: #333;  
+    transition: color 0.3s ease;  
+  }
+  
+  .text_column ul li a:hover {
+    color: #45FB78;  
+  }
+  .nav_burger.active + ul li {
+    margin-bottom: 10px;
+  }
+  .background_container {
+    margin-top:10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+  }
+  
+  .background_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    border-radius: 20px;
+  
+  }
+  
+  .background_dimmer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+    border-radius: 20px;
+  
+  }
+  
+  .text_title{
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 140px;
+    color: #45fb78;
+    z-index: 100;
+    text-align: center;
+    padding-left: 40px;
+    font-family: var(--font-family);
+  }
+  .text_under_title {
+    z-index: 100;
+    padding-left: 40px;
+    text-align: center;
+    font-family: var(--font-family);
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 50px;
+    color: #fff;
+  }
+  .logo_main {
+    margin-right: 720px;
+    margin-left: 100px;
+  }
+  .text_nav {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 26px;
+    margin-left: 61px;
+    transition: all 0.5s ease;
+  }
+  .text_nav_unique {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 26px;
+    transition: all 0.5s ease;
+  }
+  
+  
+  /* Уменьшаем отступы и размеры шрифта по мере уменьшения ширины экрана */
+  @media (max-width: 1900px) { .logo_main { margin-right: 700px;   margin-left: 100px;} }
+  @media (max-width: 1850px) { .logo_main { margin-right: 650px; margin-left: 100px;} }
+  @media (max-width: 1800px) {
+    .logo_main { margin-right: 625px;  margin-left: 90px;}
+    .text_nav { font-size: 24px; }
+    .text_nav_unique { font-size: 24px; }
+    .logo_title, .logo_subtitle { font-size: 30px; }
+    .logo img { width: 62px; height: 65px; }
+  }
+  @media (max-width: 1750px) { .logo_main { margin-right: 600px; } }
+  @media (max-width: 1700px) { .logo_main { margin-right: 575px;  margin-left: 80px;}}
+  @media (max-width: 1650px) { .logo_main { margin-right: 550px; } }
+  @media (max-width: 1600px) {
+    .logo_main { margin-right: 525px; margin-left: 70px;}
+    .text_nav { font-size: 23px; }
+    .text_nav_unique { font-size: 23px; }
+    .logo_title, .logo_subtitle { font-size: 28px; }
+    .logo img { width: 59px; height: 62px; }
+  }
+  @media (max-width: 1550px) { .logo_main { margin-right: 500px; } }
+  @media (max-width: 1500px) { .logo_main { margin-right: 475px;  margin-left: 60px;}}
+  @media (max-width: 1450px) { .logo_main { margin-right: 450px;}}
+  @media (max-width: 1400px) {
+    .logo_main {margin-right: 25px; margin-left: 50px;}
+    .text_nav { font-size: 21px; }
+    .text_nav_unique { font-size: 21px; }
+    .logo_title, .logo_subtitle { font-size: 26px; }
+    .logo img { width: 56px; height: 59px; }
+  }
+  @media (max-width: 1350px){ .logo_main{ margin-right: 150px;}}
+  @media (max-width: 1300px){ .logo_main{ margin-right: 100px; margin-left: 40px;}}
+  @media (max-width: 1200px) {
+    .text_nav { font-size: 19px; }
+    .text_nav_unique { font-size: 19px; }
+    .logo_title, .logo_subtitle { font-size: 24px; }
+    .logo img { width: 53px; height: 56px; }
+  }
+  
+  @media (max-width: 1100px) {
+    .logo { margin-right: 240px; }
+    .text_nav { font-size: 18px; }
+    .text_nav_unique { font-size: 18px; }
+    .logo_title, .logo_subtitle { font-size: 21px; }
+    .logo img { width: 48px; height: 51px; }
+  }
+  
+  @media (max-width: 1000px) {
+    .text_title {
+      padding-left: 0px;
+      margin-left: 0px;
+      font-size: 130px;
+    }
+    .text_under_title {
+      padding-left: 0px;
+      margin-left: 0px;
+      font-size: 40px;
+    }
+    .text_nav { font-size: 17px; }
+    .text_nav_unique { font-size: 17px; }
+    .logo_title, .logo_subtitle { font-size: 19px; }
+    .logo img { width: 46px; height: 49px; }
+  }
+  
+  @media (min-width: 901px) {
+    .text_burger_nav{
+      display: none;   
+    }
+    .text_column{
+      display: none;
+      height: 0px;
+      width: 0px;
+    }
+    .menu_control{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .text_nav, .text_nav_unique {
+      display: none;
+  
+    }
+    .ri-menu-line {
+      display: flex;  
+    }
+    .nav_burger {
+      display: flex;
+      cursor: pointer;
+    }
+  }
+  @media (min-width: 1921px) {
+    .header {
+      max-width: 100vw;
+      padding-top: 60px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  
+    .logo img {
+      width: 80px; /* Увеличиваем логотип */
+      height: 85px;
+    }
+  
+    .logo_title {
+      font-size: 36px; /* Увеличиваем шрифт заголовка */
+    }
+  
+    .logo_subtitle {
+      font-size: 36px; /* Увеличиваем шрифт подзаголовка */
+    }
+  
+    .text_nav, .text_nav_unique {
+      font-size: 28px; /* Увеличиваем шрифты в меню навигации */
+      margin-left: 80px; /* Увеличиваем расстояние между пунктами */
+    }
+  
+    .text_title {
+      font-size: 160px; /* Увеличиваем основной заголовок */
+    }
+  
+    .text_under_title {
+      font-size: 60px; /* Увеличиваем подзаголовок */
+    }
+  
+    .logo_main {
+      margin-right: 800px; /* Увеличиваем отступы */
+      margin-left: 150px;
+    }
+  
+    .nav_burger {
+      left: 900px; /* Корректируем положение бургер-меню */
+    }
+  }
+  
+
+ 
