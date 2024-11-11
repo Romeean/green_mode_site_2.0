@@ -59,7 +59,7 @@ export default function Header() {
           <div style={columnStyle} className="text_column">
             <ul>
               <li className="text_burger_nav"><a href="#mainPage" >Головна</a></li>
-              <li className="text_burger_nav"><a href="#aboutUsPage" >Про компанію</a></li>
+              <li className="text_burger_nav"><a href="#aboutUsPage" >О нас</a></li>
               <li className="text_burger_nav"><a href="#servicesPage" >Послуги</a></li>
               <li className="text_burger_nav"><a href="#contactUsPage" >Контакти</a></li>
             </ul>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Blurhash } from "react-blurhash";
 import './AboutUs.css';
 import AboutUsPhoto from './images/worker.jpg';
 import photobg from './images/construction.svg'
@@ -7,7 +8,7 @@ export default function AboutUs() {
   return (
     <div className="about_us_section" id='aboutUsPage'>
       <div className="text_section">  
-        <h1 className="title_of_about_us">Про компанію</h1>
+        <h1 className="title_of_about_us">О нас</h1>
         <p className="subtitle_of_about_us">
         Монтуємо якісні системи резервного живлення, сонячної енергії, вентиляції та опалення.
         </p>

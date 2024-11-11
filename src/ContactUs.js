@@ -21,29 +21,29 @@ export default function ContactUs() {
 
       const result = await response.json();
       if (result.success) {
-        setNotificationMessage("Ваше сообщение успешно отправлено!", setTimeout=3000);
+        setNotificationMessage("Ваше повідомлення успішно надіслано!", setTimeout=3000);
         reset(); // Сбрасываем форму после успешной отправки
       } else {
-        setNotificationMessage("Произошла ошибка при отправке сообщения.", setTimeout='3000');
+        setNotificationMessage("Сталася помилка під час надсилання повідомлення.", setTimeout='3000');
       }
     } catch (error) {
-      setNotificationMessage("Произошла ошибка при отправке. Попробуйте позже.", setTimeout='3000');
+      setNotificationMessage("Сталася помилка під час надсилання. Спробуйте пізніше..", setTimeout='3000');
     }
   };
 
   return (
     <div className="ContactUs">
       <div className="text_block_contact_us">
-        <h2 className="title_main">Связаться с нами</h2>
+        <h2 className="title_main">Зв'язатися з нами</h2>
         <p className="description_text">
-          Отправьте сообщение на email или заполните форму, чтобы мы узнали, как мы можем решить вашу проблему.
+          Надішліть повідомлення на email або заповніть форму, щоб ми дізналися, як можемо вирішити вашу проблему.
         </p>
         <p className="description_gmail">greenmodecompany@gmail.com</p>
         <p className="description_phone_number">
           Менеджер: <span className="number_of_telephone">+380 68 889 3445</span>
         </p>
         <p className="description_phone_number">
-          Инженер: <span className="number_of_telephone">+380 97 364 9765</span>
+          Інженер: <span className="number_of_telephone">+380 97 364 9765</span>
         </p>
       </div>
       <div className="background_of_form">
@@ -52,25 +52,25 @@ export default function ContactUs() {
           <input
             name="name"
             className="name_input"
-            placeholder="Имя"
+            placeholder="Им'я"
             maxLength="20"
             autoComplete="off"
-            {...register("name", { required: "Имя обязательно" })}
+            {...register("name", { required: "Им'я обов'язково" })}
           />
           {errors.name && <p className="error_message">{errors.name.message}</p>}
 
           <input
             name="phoneNumber"
             className="phonenumber_input"
-            placeholder="Номер телефона"
+            placeholder="Номер телефону"
             maxLength="12"
             autoComplete="off"
             onInput={(e) => e.target.value = e.target.value.replace(/\D/g, "")}
             {...register("phoneNumber", { 
-              required: "Номер телефона обязателен", 
+              required: "Номер телефону обов'язковий", 
               pattern: {
                 value: /^[0-9, -]+$/,
-                message: "Только цифры допустимы"
+                message: "Лише цифри дозволенні"
               }
             })}
           />
@@ -79,13 +79,13 @@ export default function ContactUs() {
           <textarea
             name="problem"
             className="problem_input"
-            placeholder="Какую проблему вы хотите решить?"
+            placeholder="Яку проблему ви хочете вирішити?"
             maxLength="250"
-            {...register("problem", { required: "Поле обязательно для заполнения" })}
+            {...register("problem", { required: "Поле обов’язкове для заповнення" })}
           ></textarea>
           {errors.problem && <p className="error_message">{errors.problem.message}</p>}
 
-          <button type="submit" className="button_form">Отправить заявку</button>
+          <button type="submit" className="button_form">Відправити заявку</button>
         </form>
         {notificationMessage && (
           <div className="notification">{notificationMessage}</div>
