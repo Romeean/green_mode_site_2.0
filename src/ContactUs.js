@@ -40,10 +40,10 @@ export default function ContactUs() {
         </p>
         <p className="description_gmail">greenmodecompany@gmail.com</p>
         <p className="description_phone_number">
-          Менеджер: <span className="number_of_telephone">+380 68 889 3445</span>
+          Відділ продажу: <span className="number_of_telephone">+380 68 889 3445</span>
         </p>
         <p className="description_phone_number">
-          Інженер: <span className="number_of_telephone">+380 97 364 9765</span>
+          Відділ технічної підтримки: <span className="number_of_telephone">+380 97 364 9765</span>
         </p>
       </div>
       <div className="background_of_form">
@@ -79,7 +79,7 @@ export default function ContactUs() {
           <textarea
             name="problem"
             className="problem_input"
-            placeholder="Яку проблему ви хочете вирішити?"
+            placeholder="Яку проблему Ви хочете вирішити?"
             maxLength="250"
             {...register("problem", { required: "Поле обов’язкове для заповнення" })}
           ></textarea>

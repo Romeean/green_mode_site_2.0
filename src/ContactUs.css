@@ -73,7 +73,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   width: 600px;
-  height: 700px;
+  height: 650px;
   border-radius: 70px;
   background-color: #45FB78;
 }
@@ -163,7 +163,7 @@ a { /* и к ссылкам */
 }
 @media(max-width: 1500px){
   .ContactUs{
-    margin-left: 0px;
+    margin-left: 9vw;
   }
 }
 @media(max-width: 1330px){
@@ -188,18 +188,25 @@ a { /* и к ссылкам */
   }
   .ContactUs{
   grid-template-columns: repeat(1, 1fr); 
+  margin-left: 0px;
  }
  .title_main{
   width: 85vw;
+  font-size: 4.7vw;
+
  }
  .description_text{
   width: 85vw;
+  font-size: 3.01vw;
  }
  .description_gmail{
   width: 85vw;
+  font-size: 3.01vw;
+
  }
  .description_phone_number{
   width: 85vw;
+  font-size: 3.01vw;
  }
 .text_block_contact_us{
 }
@@ -215,10 +222,26 @@ input::placeholder {
   font-size: 1.8vw
 }
 }
+
+@media(max-width: 700px){
+  .description_gmail,
+  .description_phone_number,
+  .description_text{
+    font-size: 21.07px;
+  }
+  
+  .title_main{
+    font-size: 32.9px;
+  }
+}
+
 @media(max-width: 600px){
+  .description_gmail{
+    margin-top: 40px;
+  }
   .background_of_form{
   width: 320px;
-  height: 680px;
+  height: 540px;
   margin-left: auto; /* Автоматически центрирует по горизонтали */
   margin-right: auto; 
 }
