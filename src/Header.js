@@ -32,7 +32,7 @@ export default function Header() {
         <img loading="lazy" className="background_image" src={background} alt="Background" />
         <div className="background_dimmer"></div>
         <h1 className="text_title" >GreenMode</h1>
-        <h2 className="text_under_title">Проекты различной сложности</h2>
+        <h2 className="text_under_title">Проєкти різної складності</h2>
       </div> 
       <div className="header">
         <a href="#mainPage" className="logo_button">
@@ -46,10 +46,10 @@ export default function Header() {
         </a>
         <nav>
           <ul className="navbar_links">
-            <li><a href="#mainPage" className="text_nav_unique">Главная</a></li>
-            <li><a href="#aboutUsPage" className="text_nav">О компании</a></li>
-            <li><a href="#servicesPage" className="text_nav">Услуги</a></li>
-            <li><a href="#contactUsPage" className="text_nav">Контакты</a></li>
+            <li><a href="#mainPage" className="text_nav_unique">Головна</a></li>
+            <li><a href="#aboutUsPage" className="text_nav">Про компанію</a></li>
+            <li><a href="#servicesPage" className="text_nav">Послуги</a></li>
+            <li><a href="#contactUsPage" className="text_nav">Контакти</a></li>
           </ul>
           <li><a href="javascript:void(0);" className="nav_burger" onClick={handleMenu}>
             <div className='menu_control'>
@@ -58,10 +58,10 @@ export default function Header() {
           </a></li>
           <div style={columnStyle} className="text_column">
             <ul>
-              <li className="text_burger_nav"><a href="#mainPage" >Главная</a></li>
-              <li className="text_burger_nav"><a href="#aboutUsPage" >О компании</a></li>
-              <li className="text_burger_nav"><a href="#servicesPage" >Услуги</a></li>
-              <li className="text_burger_nav"><a href="#contactUsPage" >Контакты</a></li>
+              <li className="text_burger_nav"><a href="#mainPage" >Головна</a></li>
+              <li className="text_burger_nav"><a href="#aboutUsPage" >Про компанію</a></li>
+              <li className="text_burger_nav"><a href="#servicesPage" >Послуги</a></li>
+              <li className="text_burger_nav"><a href="#contactUsPage" >Контакти</a></li>
             </ul>
           </div>
         </nav>  
