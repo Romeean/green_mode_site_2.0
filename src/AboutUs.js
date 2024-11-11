@@ -7,15 +7,12 @@ export default function AboutUs() {
   return (
     <div className="about_us_section" id='aboutUsPage'>
       <div className="text_section">  
-        <h1 className="title_of_about_us">О компании</h1>
+        <h1 className="title_of_about_us">Про компанію</h1>
         <p className="subtitle_of_about_us">
-          Монтируем качественные системы резервного питания, солнечной энергии,
-          вентиляции и отопления.
+        Монтуємо якісні системи резервного живлення, сонячної енергії, вентиляції та опалення.
         </p>
         <p className="subtitle_of_about_us">
-          <span className="bold_subtitle_of_about_us">Наша специальность</span> - источники
-          возобновляемой энергии. Работаем по всей Украине, реализовали более 50
-          проектов, частных и государственных учереждений.
+          <span className="bold_subtitle_of_about_us">Наша спеціальність</span> - Джерела відновлюваної енергії. Працюємо по всій Україні, реалізували понад 50 проєктів для приватних і державних установ.
         </p>
       </div>
       <div className="photo_section">
