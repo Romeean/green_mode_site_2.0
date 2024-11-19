@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+.main_page {
+  width: 100%; /* Избегаем 100vw */
+  max-width: 3840px;
+  min-height: 100vh;
+  background-color: none;
+  align-items: center;
+  z-index: 1;
+  overflow-x: hidden; /* Прячем горизонтальную прокрутку */
+  }
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  max-width: 1920px; 
+  margin: 0 auto;
+  margin: 0px;
+  }
+.container > * {
+  min-height: 100vh; /* Высота каждого элемента как минимум равна высоте экрана */
+  }
+
+@media(min-width:1920px){
+  .container{
+    max-width: 100vw;
+  }}
+
+
+
+  /* here starts main styles */
+
+.background_containerr{
+  top:350px;
+  margin-top:10px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+}
+.background_dimmerr{
+  background-color: #151414;
+  opacity: 0.6;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+  border-radius: 20px;
+}
+.icon_of_priorities{
+  position: relative;
+  z-index: 1;
+}
+.block_of_text_services_page{
+  position: absolute;
+  transform: translateX(-50%); /* Центрирует по горизонтали */
+  left: 50%;
+  width: 84.6vw;
+  top: 160px;
+  text-align: center;
+
+}
+.text_of_services{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(30px, 5vw, 55px); /* Минимум 30px, адаптация до 55px */
+  color: #fff;
+
+}
+.green_text_of_services{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(30px, 5vw, 55px); /* Минимум 30px, адаптация до 55px */
+  color: #45fb78;
+}
+.container_of_priorities{
+  margin-top: 0px;
+  z-index: 10;
+  margin-bottom: 100px;
+}

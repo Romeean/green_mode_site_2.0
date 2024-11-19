@@ -16,6 +16,8 @@
     "react-blurhash": "^0.3.0",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.1",
+    "react-router-dom": "^6.28.0",
+    "react-router-native": "^6.28.0",
     "react-scripts": "^5.0.1",
     "resolve-url-loader": "^5.0.0",
     "svgo": "^3.3.2",

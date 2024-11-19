@@ -1,11 +1,12 @@
-import './App.css';
-import Header from './Header';
-import AboutUs from './AboutUs';
-import Services from './Services';
-import ContactUs from './ContactUs';
-import Footer from './Footer';
+import { Route, Routes, Router, HashRouter, Link, BrowserRouter } from 'react-router-dom';
+import  React, { useEffect } from 'react';
 
-import React, { useEffect } from 'react';
+import HomePage from '../src/Pages/HomePage';
+import AboutUsPage from '../src/Pages/AboutUsPage';
+import ServicesPage from '../src/Pages/ServicesPage';
+import ContactUsPage from '../src/Pages/ContactUsPage';
+import ExamplesOfOurProjects from '../src/Pages/ExapmlesOfOurProjects'
+import ScrollToTop from './Components/ScrollUp';
 
 
 function App() {
@@ -23,19 +24,22 @@ function App() {
       window.removeEventListener('wheel', handleWheel);
     };
   }, []);
+
+
   return (
-      <div className='main_page'>
-        <div className='container'>
-          <Header />    
-          <AboutUs />
-          <Services />
-          <ContactUs />
+    <>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path= "/AboutUsPage" element={<AboutUsPage />}/>
+        <Route path="/ServicesPage" element={<ServicesPage />}/>
+        <Route path="/ContactUsPage" element={<ContactUsPage />}/>
+        <Route path="/ExamplesOfOurProjects" element={<ExamplesOfOurProjects />}/>
+      </Routes>
+    </BrowserRouter>
+    </>
 
-         
-        </div>
-        <Footer />
-
-      </div>
   );
 }
 

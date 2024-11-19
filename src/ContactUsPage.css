@@ -1,0 +1,103 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.block_of_text_contact_us_page{
+  display: flex;
+  justify-content: center;
+}
+.question_container{
+  width: 100%; /* Ширина контейнера */
+  max-width: 1800px; /* Ограничение максимальной ширины */
+  margin: 0 auto; /* Центрирование контейнера */
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.component_questions_answer{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr; /* Две части: одна для изображения, другая для текста */
+  gap: 10px;
+  margin-top: 100px;
+  max-width: 543px;
+}
+.bg_photo_contact_us{
+  position: absolute;
+  top: 960px;
+  width: 100vw;
+  z-index: 0;
+  max-height: 1920px;
+}
+.section_questions_answer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Три равные колонки */
+  gap: 40px; /* Расстояние между блоками */
+}
+.title_questions_answer{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+}
+.subtitle_questions_answer{
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 26px;
+  color: #fff;
+  margin-top: 20px;
+}
+/* media_request */
+
+@media(max-width: 1500px){
+  .section_questions_answer{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  img{
+    width: 80px;
+    height: 80px;
+  }}
+  .bg_photo_contact_us{
+    display: none;
+  }
+
+@media(max-width: 1160px){
+  .title_questions_answer{
+    font-size: 2.5vw;
+  }
+  .subtitle_questions_answer{
+    font-size: 2.2vw;
+  }}
+
+@media(max-width: 1000px){
+  .title_questions_answer{
+    font-size: 25px;
+    width: 78vw;
+  }
+  .subtitle_questions_answer{
+    font-size: 21.07px;
+    width: 78vw;
+  }
+  .component_questions_answer{
+    gap:0px;
+  }
+  img {
+    width: 70px;
+  }
+  .section_questions_answer{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: left; /* Центрирование элементов по горизонтали */
+  }
+  .component_questions_answer{
+    grid-template-columns: 0.4fr 2fr;
+  }}
+
+  @media(max-height: 700px){
+    .background_of_group_photo{
+      margin-top: 50vh;
+      height: 200px;
+    }
+    .subtitle_of_groud_photo{
+      justify-content: left;
+
+    }
+  } 

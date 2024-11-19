@@ -1,0 +1,100 @@
+/* Сброс отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Сетка для блоков */
+.grid_block {
+  display: grid;
+  grid-template-columns: repeat( 3, 1fr);
+  gap: 30px;
+}
+.the_best_projects_title_block{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.the_best_projects_title{
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(30px, 2vw, 55px);
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #fff;
+  justify-content: center;
+}
+.the_best_projects_title_green{
+  color: #45fb78;
+}
+/* Блок каждого проекта */
+.component_block {
+  display: flex;
+  flex-direction: column;
+  background: #45FB78;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.component_block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+/* Изображение */
+.photo_bg {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Описание проекта */
+.description {
+  background-color: #45FB78;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+}
+/* Текст описания */
+.text_of_description_projects {
+  font-family: var(--font-family);
+}
+.text_of_description_projects_bold {
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+/* media_requests */
+@media(max-width: 1000px){
+  .grid_block{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .grid_block {
+    grid-template-columns: repeat(1, 1fr); /* Один столбец */
+    gap: 100px;
+  }
+  .description {
+    width: 90%; /* Фиксированная ширина в процентах для адаптивности */
+    max-width: 500px; /* Ограничение по максимальной ширине */
+    margin: 0 auto; /* Центрирование по горизонтали */
+    text-align: center; /* Центрирование текста */
+    padding: 15px; /* Уменьшенные отступы */
+  }
+  .text_of_description_projects {
+    font-size: 18px; /* Уменьшенный размер текста */
+    line-height: 1.6; /* Увеличенная высота строки для удобства чтения */
+  }}

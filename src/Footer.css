@@ -2,50 +2,65 @@
   margin: 0px;
   padding: 0px;
 }
-
-.footer{
+.footer {
   background-color: #34C55C;
   width: 100vw;
+  display: flex; /* Устанавливаем flexbox для контейнера */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center; /* Центрируем содержимое по вертикали */
+  padding: 20px 0; /* Добавляем отступы сверху и снизу */
+  box-sizing: border-box; /* Учитываем паддинги в общей ширине */
 }
-.footer_block{
-  display: grid;
-  margin-left: 100px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.footer_block {
+  display: grid; /* Используем грид */
+  grid-template-columns: repeat(3, 1fr); /* Три колонки */
+  gap: 30px; /* Промежуток между колонками */
+  justify-items: center; /* Центрируем содержимое каждой колонки */
+  text-align: center; /* Центрируем текст внутри колонок */
 }
 .footer_column {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
+  align-items: center; /* Центрируем элементы внутри колонок */
 }
-.text_title_footer{
-  display: flex;
+.text_title_footer {
   margin-top: 100px;
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: 38px;
+  font-size: 30px;
   color: #000;
+  text-align: center; /* Центрируем заголовки */
 }
-.text_title_link{
-  display: flex;
+.text_title_link {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 35px;
+  font-size: 28px;
   line-height: 125%;
-  margin-top: 30px;
+  margin-top: 18px;
   color: #000;
+  transition: color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+  text-align: center; /* Центрируем текст ссылок */
+}
+.text_title_link:hover {
+  color: #222B24; /* Изменяем цвет на синий */
+  transition: 1;
+  transform: scale(1.05); /* Увеличиваем элемент на 5% */
 }
 .icon_footer{
   display: inline;
   width: 70px;
   height: 70px;
 }
-.icons_column{
+.icons_column {
   display: grid;
-  max-width: 330px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 40px;
-  grid-template-columns: repeat(3, 1fr);
+  justify-items: center; /* Центрируем иконки */
+}
+.icon_footer:hover{
+  opacity: 0.2;
+  transition: 0.3s ease-in-out;
 }
 @media(max-width: 1000px){
   .footer_block {
@@ -55,16 +70,8 @@
     gap: 20px; /* Промежуток между блоками */
     margin: 0px;
   }
-
   .footer_column {
     align-items: center; /* Центрирование содержимого колонок */
   }}
-  @media(max-width: 500px){
-    .text_title_footer{
-      font-size: 33px;
-    }
-    .text_title_link{
-      font-size: 30px;
-    }
-  }
+
   

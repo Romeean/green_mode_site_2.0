@@ -1,0 +1,33 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  }
+  
+.button_form_services {
+  display: flex; /* Центрирование содержимого */
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto; /* Отступы сверху/снизу и центрирование */
+  color: #45FB78; /* Белый текст для контраста */
+  }
+  
+.button_form_text {
+  width: 198px;
+  height: 46px;
+  background-color: #289e49; /* Задаём фон */
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #45FB78; /* Белый текст для контраста */
+  border: none; /* Убираем границу */
+  border-radius: 5px; /* Закруглённые углы */
+  cursor: pointer; /* Курсор при наведении */
+  transition: opacity 0.3s, transform 0.3s; /* Анимация */
+  }
+  
+.button_form_text:hover {
+  opacity: 0.8; /* Уменьшение прозрачности при наведении */
+  transform: scale(1.03); /* Лёгкое увеличение */
+  }
+  

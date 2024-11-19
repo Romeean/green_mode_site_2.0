@@ -25,7 +25,6 @@ textarea::placeholder {
   gap: clamp(20px, 5vw, 480px); /* расстояние между колонками */
   margin-top: 200px;
   margin-left: 170px;
-
 }
 
 .text_block {
@@ -50,7 +49,7 @@ textarea::placeholder {
   font-family: var(--font-family);
   font-weight: 300;
   font-size: 35px;
-  font-size: clamp(20px, 4vw, 35px); /* Минимум 20px, адаптация до 35px */
+  font-size: clamp(20px, 4vw, 30px); /* Минимум 20px, адаптация до 35px */
   line-height: 125%;
   color: #fff;
   transition: all 0.5ms ease;
@@ -157,21 +156,21 @@ a { /* и к ссылкам */
 .button_form:hover {
   background-color: #5ca718;
 }
+
 .number_of_telephone{
   font-family: var(--second-family);
-
 }
 @media(max-width: 1500px){
   .ContactUs{
     margin-left: 9vw;
-  }
-}
+  }}
+
 @media(max-width: 1330px){
   .background_of_form{
     width: 500px;
     height: 600px;
-  }
-}
+  }}
+
 @media(max-width: 1160px){
   .text_block_contact_us{
     margin-left: 10vw;
@@ -184,42 +183,31 @@ a { /* и к ссылкам */
     margin-bottom: 200px;
     gap:0px;
   }
-  .form_title{
-  }
   .ContactUs{
-  grid-template-columns: repeat(1, 1fr); 
-  margin-left: 0px;
+    grid-template-columns: repeat(1, 1fr); 
+    margin-left: 0px;
  }
- .title_main{
-  width: 85vw;
-  font-size: 4.7vw;
-
+  .title_main{
+    width: 85vw;
+    font-size: 4.7vw;
  }
- .description_text{
-  width: 85vw;
-  font-size: 3.01vw;
+  .description_text{
+    width: 85vw;
+    font-size: 3.01vw;
  }
  .description_gmail{
-  width: 85vw;
-  font-size: 3.01vw;
-
+    width: 85vw;
+    font-size: 3.01vw;
  }
  .description_phone_number{
-  width: 85vw;
-  font-size: 3.01vw;
+    width: 85vw;
+    font-size: 3.01vw;
  }
-.text_block_contact_us{
-}
 .form_title{
   font-size: 5vw;
 }
-textarea::placeholder {
-  
+::placeholder {
   font-size: 2vw
-}
-input::placeholder {
-  
-  font-size: 1.8vw
 }
 }
 
@@ -229,11 +217,9 @@ input::placeholder {
   .description_text{
     font-size: 21.07px;
   }
-  
   .title_main{
     font-size: 32.9px;
-  }
-}
+  }}
 
 @media(max-width: 600px){
   .description_gmail{
@@ -261,16 +247,13 @@ input::placeholder {
 @media(max-width: 350px){
   .background_of_form{
     margin-left: 0px;
-  }
-}
+  }}
+
 @media(max-width: 320px){
   .background_of_form{
     margin-left: 0px;
-  }
-  .background_of_form{
-
-  }
-}
+  }}
+  
 @media (min-width: 1921px) {
   .ContactUs {
     display: grid;
@@ -281,47 +264,49 @@ input::placeholder {
     margin-right: auto;
     max-width: 1600px; /* Ограничиваем ширину секции, чтобы не растягивать ее */
   }
-
   .text_block {
     padding: 40px; /* Увеличиваем отступы для текстового блока */
   }
-
   .title_main {
     font-size: 70px; /* Увеличиваем размер заголовка */
   }
-
   .description_text,
   .description_gmail,
   .description_phone_number {
     font-size: 45px; /* Увеличиваем шрифты для текстов */
     line-height: 150%; /* Увеличиваем межстрочное расстояние для улучшения читаемости */
   }
-
   .background_of_form {
     width: 800px; /* Увеличиваем ширину формы */
     height: 900px; /* Увеличиваем высоту формы */
     padding: 40px; /* Увеличиваем внутренние отступы формы */
     border-radius: 50px; /* Скругление формы остается, но слегка уменьшаем */
   }
-
   .form_title {
     font-size: 60px; /* Увеличиваем заголовок формы */
     margin-bottom: 30px; /* Добавляем больший отступ снизу */
   }
-
   .name_input,
   .phonenumber_input {
     height: 50px; /* Увеличиваем высоту полей ввода */
     font-size: 22px; /* Увеличиваем размер шрифта в полях ввода */
   }
-
   .problem_input {
     height: 300px; /* Увеличиваем высоту текстовой области */
     font-size: 22px; /* Увеличиваем размер шрифта в текстовой области */
   }
-
   .button_form {
     font-size: 24px; /* Увеличиваем размер шрифта на кнопке */
     padding: 20px; /* Увеличиваем отступы кнопки */
   }
+  
 }
+@media(max-height: 700px){
+  .text_block{
+    padding-top: 100vh;
+  }
+  .background_of_form{
+    height: 550px;
+  }
+  
+} 
