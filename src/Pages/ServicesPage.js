@@ -6,7 +6,7 @@ import Header from "../Components/Header";
 import Services from '../Components/Services'
 import Button from "../Components/Button";
 
-import background_image from "../images/background_darker.svg"
+import background_image from "../images/background_imagee.jpg"
 import icon_ventilation from '../images/main_services_ventilation_icon.svg'
 import icon_solarsystem from '../images/main_services_solar_system_logo.svg'
 import icon_heating from '../images/main_services_heating.svg'
