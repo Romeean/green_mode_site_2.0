@@ -38,24 +38,17 @@ export default function AboutUsPage() {
           <p className='subtitle_text_aboutus_page'>Сьогодні ми з гордістю відзначаємо, що наш шлях, який розпочався з невеликих проєктів, привів нас до можливості пропонувати комплексні інженерні рішення в галузі вентиляції, опалення, кондиціювання та резервного живлення. Ми цінуємо довіру наших клієнтів і прагнемо виправдовувати її, пропонуючи якісні та сучасні рішення для кожного.</p>
         </div>
       </div>
-      <div className='wrapper'>
-        <div className='div_of_photo'>
-          <div><img  loading="lazy" src={background_group_photo} className='background_group_photo'/></div>
+      <div class="meet_our_team">
+        <div class="fr_text">
+          <h2 class="text_meet_our_team">
+            Познайомтесь з нашими <span class="text_meet_our_team_green">працівниками</span>
+          <div className="container_of_our_team">
+            <img className="image_of_us"src={background_group_photo}></img>
+          </div>
+          </h2>
+          
         </div>
-        <div className="sometime_empty">
-          <p></p>
-        </div>
-        <div className="sometime_empty"><p></p></div>
-        <div className="sometime_empty"><p></p></div>
-        <div className="sometime_empty">
-          <h2 className='title_of_group_photo'>Наша команда</h2>
-        </div>
-        <div className="sometime_empty"><p></p></div>
-        <div className="sometime_empty"><p></p></div>
-        <div className='background_of_group_photo'>
-          <p className='subtitle_of_group_photo'>Досвідчені фахівці в галузі кондиціонування, опалення, вентиляції та резервного живлення. Ми пропонуємо надійні рішення, орієнтовані на комфорт і якість.</p>
-        </div>
-        <div className='backgrounder'></div>
+
       </div>
     </div>
     <Footer />
