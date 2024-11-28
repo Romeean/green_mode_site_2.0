@@ -40,8 +40,8 @@ export default function ServicesPage() {
           <div className="background_of_priorities">
             <div className="icon_of_priorities">
               <img loading="lazy" className="icon_image" src={icon_solarsystem} alt='notfound'></img>
-              <h2 className="text_title_of_priorities">Сонячні системи</h2>
-              <p className="text_subtitle_of_priorities">Живлення — ключовий елемент надійності та стабільності в наш складний час.</p>
+              <h2 className="text_title_of_priorities">Сонячні системи та електростанції</h2>
+              <p className="text_subtitle_of_priorities">Живлення — ключовий та незамінний елемент надійності та стабільності в наш з Вами складний час.</p>
               <Button />
             </div>
           </div>

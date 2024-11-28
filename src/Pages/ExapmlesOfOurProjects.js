@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../Components/Header"
 import Footer from "../Components/Footer";
-import photo_of_our_work from "../images/photo_of_our_work.svg"
-import photo_of_our_work_2 from "../images/photo_of_our_work_2.svg"
-import photo_of_our_work_3 from "../images/photo_of_our_work_3.png"
+import photo_of_our_work from "../images/our_work_1.jpg"
+import photo_of_our_work_2 from "../images/our_work_2.jpg"
+import photo_of_our_work_3 from "../images/our_work_3.jpg"
 import "../ExamplesOfOurProjects.css"
 
 
@@ -21,7 +21,7 @@ export default function ExamplesOfOurProjects(){
               </div>
               <div className="description">
                 <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Сфера проєкту:</span> Система отопления
+                  <span className="text_of_description_projects_bold">Сфера проєкту:</span> Система вентеляції
                 </p>
                 <p className="text_of_description_projects">
                   <span className="text_of_description_projects_bold">Локація:</span> Ласточкіна 5
@@ -37,10 +37,10 @@ export default function ExamplesOfOurProjects(){
               </div>
               <div className="description">
                 <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Сфера проєкту:</span> Резервне живлення
+                  <span className="text_of_description_projects_bold">Сфера проєкту:</span> Сонячна електростанція
                 </p>
                 <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Локація:</span> Руставі 5
+                  <span className="text_of_description_projects_bold">Локація:</span> вулиця Лермонтова, 9а
                 </p>
                 <p className="text_of_description_projects">
                   <span className="text_of_description_projects_bold">Термін виконання:</span> 7 робочих днів
@@ -63,38 +63,7 @@ export default function ExamplesOfOurProjects(){
                 </p>
               </div>
             </div>
-            <div className="component_block">
-              <div className="photo_bg">
-                <img className="photo" src={photo_of_our_work} alt="Project example" />
-              </div>
-              <div className="description">
-                <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Сфера проекта:</span> Система отопления
-                </p>
-                <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Локация:</span> Чепаева 5
-                </p>
-                <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Термин исполнения:</span> 10 рабочих дней
-                </p>
-              </div>
-            </div>
-            <div className="component_block">
-              <div className="photo_bg">
-                <img className="photo" src={photo_of_our_work} alt="Project example" />
-              </div>
-              <div className="description">
-                <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Сфера проекта:</span> Система отопления
-                </p>
-                <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Локация:</span> Чепаева 5
-                </p>
-                <p className="text_of_description_projects">
-                  <span className="text_of_description_projects_bold">Термин исполнения:</span> 10 рабочих дней
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>

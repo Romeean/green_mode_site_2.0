@@ -1,6 +1,6 @@
 import React from "react";
 import '../AboutUs.css';
-import AboutUsPhoto from '../images/worker.jpg';
+import AboutUsPhoto from '../images/main_about_us_photo.jpg';
 import photobg from '../images/construction.svg'
 
 export default function AboutUs() {
