@@ -42,7 +42,7 @@ export default function Header() {
           <ul className="navbar_links">
             <li><Link to="/"><a className="text_nav_unique">Головна</a></Link></li>
             <li><Link to="/AboutUsPage"><a className="text_nav">Про компанію</a></Link></li>
-            <li><Link to="/ServicesPage"><a className="text_nav">Послуги</a></Link></li>
+            {/* <li><Link to="/ServicesPage"><a className="text_nav">Послуги</a></Link></li> */}
             <li><Link to="/ContactUsPage"><a className="text_nav">Контакти</a></Link></li>
           </ul>
           <li><a href="javascript:void(0);" className="nav_burger" onClick={handleMenu}>

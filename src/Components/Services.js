@@ -22,7 +22,7 @@ export default function Services(){
               <img loading="lazy" className="icon_image" src={icon_solarsystem} alt='notfound'></img>
               <h2 className="text_title_of_priorities">Сонячні електростанції та ДБЖ</h2>
               <p className="text_subtitle_of_priorities">Наявність власного живлення - ключовий елемент надійності та стабільності в наш складний час.</p>
-              <Button />
+              {/* <Button /> */}
             </div>
           </div>
           <div className="background_of_priorities" >
@@ -30,7 +30,7 @@ export default function Services(){
               <img loading="lazy" className="icon_image" src={icon_heating} alt='notfound'></img>
               <h2 className="text_title_of_priorities">Теплові насоси та Опалення</h2>
               <p className="text_subtitle_of_priorities">Опалення — незамінний компонент нашого життя, і ми пропонуємо вирішення цього завдання різними способами.</p>  
-              <Button />
+              {/* <Button /> */}
             </div>
           </div>
           <div className="background_of_priorities">
@@ -39,7 +39,7 @@ export default function Services(){
               <h2 className="text_title_of_priorities">Системи вентиляції та Кондиціонування</h2>
               <p className="text_subtitle_of_priorities">Чистота та циркуляція повітря здатні зробити приміщення комфортним.
               Дозвольте собі дихати вільно.</p>
-              <Button />
+              {/* <Button /> */}
             </div>
           </div>  
         </div>
